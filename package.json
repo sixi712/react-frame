@@ -1,0 +1,32 @@
+{
+  "name": "react-frame",
+  "version": "1.0.0",
+  "description": "123",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sixi712/react-frame.git"
+  },
+  "author": "Luo Shiheng",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sixi712/react-frame/issues"
+  },
+  "homepage": "https://github.com/sixi712/react-frame#readme",
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "devDependencies": {
+    "@types/react": "^16.9.49",
+    "@types/react-dom": "^16.9.8",
+    "awesome-typescript-loader": "^5.2.1",
+    "typescript": "^4.0.2",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  }
+}

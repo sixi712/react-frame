@@ -1,0 +1,34 @@
+$base-font-size: 16px;
+$base-font-family: "PingFang SC", "Arial", "Lantinghei SC", "Microsoft YaHei", "HanHei SC", "Open Sans",
+  "Hiragino Sans GB", "微软雅黑", STHeiti, "WenQuanYi Micro Hei", SimSun, sans-serif;
+$theme-color: #409eff;
+$hover-color: #66b1ff;
+$gray-color: #bcbec2;
+$gray-hover: #606266;
+$disable-color: #f5f7fa;
+$disable-font: #c0c4cc;
+$disable-border: #e4e7ed;
+$common-height: 40px;
+
+@mixin centerA() {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+@mixin centerB() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.click-text {
+  cursor: pointer;
+  color: $theme-color;
+}
+
+@function common-transition($type: all) {
+  @return $type 0.3s ease-in-out;
+}

@@ -1,13 +1,13 @@
 import React from "react";
 import Test from "./assets/images/test.svg";
 
-function App() {
+const App: React.FC = () => {
   return (
     <div className="App">
-      232323223
+      <p>232323223</p>
       <Test></Test>
     </div>
   );
-}
+};
 
 export default App;

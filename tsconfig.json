@@ -9,7 +9,20 @@
     "removeComments": true,
     "sourceMap": true,
     "target": "es5",
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "baseUrl": "./",
+    "paths": {
+      "@": ["src/*"],
+      "@Views/*": ["src/views/*"],
+      "@Components/*": ["src/components/*"],
+      "@Constants/*": ["src/constants/*"],
+      "@Router/*": ["src/router/*"],
+      "@Assets/*": ["src/assets/*"],
+      "@CSS/*": ["src/styles/*"],
+      "@Common/*": ["src/utils/common/*"],
+      "@Regular/*": ["src/utils/regExps/*"],
+      "@Request/*": ["src/utils/request/apis/*"]
+    }
   },
   "include": ["./src/**/*", "./src/images.d.ts"]
 }

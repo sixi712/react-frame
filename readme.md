@@ -1,8 +1,16 @@
 # react hooks + typescript frame
 
+此框架基于：  
+https://zhuanlan.zhihu.com/p/59023070  
+https://zhuanlan.zhihu.com/p/59067365
+
+---
+
 ## 配置 alias
 
 在正常的 webpack 配置基础上还要在 tsconfig.json 里面配置 baseUrl 和 paths
+
+---
 
 # package.json 里面部分插件说明
 

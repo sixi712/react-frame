@@ -15,5 +15,22 @@ module.exports = {
   //     version: "detect"
   //   }
   // },
-  rules: {}
+  rules: {
+    "no-console": "off",
+    "no-debugger": "off",
+    quotes: [1, "double"],
+    semi: [1, "always"],
+    "object-curly-spacing": [1, "always"],
+    "no-global-assign": 2, //禁止对原生对象或只读的全局对象进行赋值
+    "no-redeclare": 2, //禁止多次声明同一变量
+    "no-const-assign": 2, //禁止修改 const 声明的变量
+    "no-unused-vars": 0,
+    "arrow-spacing": [
+      1,
+      {
+        before: true,
+        after: true
+      }
+    ]
+  }
 };

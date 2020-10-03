@@ -1,7 +1,6 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const isProd = process.env.NODE_ENV === "production";
 
 module.exports = {
   entry: path.resolve(__dirname, "../src/index.js"),
@@ -35,19 +34,6 @@ module.exports = {
         test: /\.js$/,
         use: "babel-loader",
         exclude: /node_modules/
-      },
-      {
-        // mini-css-extract-plugin：将把我们编译的所有SCSS编译成CSS并将它们放在一个新文件中，而不是内联它们。需要区别 extract-text-webpack-plugin
-        // css-loader：将通过解析我们拥有的任何导入和URL来加载我们的 CSS
-        // sass-loader：加载我们的sass或SCSS
-        // node-sass：将我们的SCSS编译为CSS
-        test: /\.scss$/,
-        use: [
-          isProd ? MiniCssExtractPlugin.loader : "style-loader",
-          "css-loader",
-          "postcss-loader",
-          "sass-loader"
-        ]
       },
       {
         test: /\.svg$/,

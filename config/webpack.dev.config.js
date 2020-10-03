@@ -12,6 +12,10 @@ module.exports = merge(common, {
         enforce: "pre",
         test: /\.js$/,
         loader: "source-map-loader"
+      },
+      {
+        test: /\.(sa|sc|c)ss$/,
+        use: ["style-loader", "css-loader", "postcss-loader", "sass-loader"]
       }
     ]
   }

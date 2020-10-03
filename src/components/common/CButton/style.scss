@@ -1,0 +1,42 @@
+@import "@CSS/index.scss";
+
+.btn {
+  position: relative;
+  width: 100%;
+  height: $common-height;
+  background: $theme-color;
+  text-align: center;
+  color: #ffffff;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &:hover {
+    background: $hover-color;
+  }
+  &--disable {
+    > div {
+      display: flex;
+    }
+    background: $disable-color;
+    color: $disable-font;
+    cursor: not-allowed;
+    &:hover {
+      background: $disable-color;
+    }
+  }
+  &--loading {
+    > div {
+      display: flex;
+    }
+    cursor: not-allowed;
+    &:hover {
+      background: $theme-color;
+    }
+  }
+}
+
+.loading-icon {
+  margin-right: 16px;
+}

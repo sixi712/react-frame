@@ -3,6 +3,10 @@ const common = require("./webpack.common.config");
 module.exports = merge(common, {
   mode: "development",
   devtool: "source-map",
+  devServer: {
+    host: "0.0.0.0",
+    port: 8088
+  },
   module: {
     rules: [
       // enforce: "pre" --> 把该 Loader 的执行顺序放到最前面

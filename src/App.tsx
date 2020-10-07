@@ -4,13 +4,15 @@ import { CButton } from "@Components/common";
 import "./style";
 
 const App: React.FC = () => {
+  const [isLoading, setBtnLoading] = React.useState(false);
   return (
     <div className="App">
-      <p>232323223</p>
+      <p>{String(isLoading)}</p>
       <CButton
-        isLoading={true}
+        isLoading={isLoading}
         btnText="确认"
         className="confirm-btn"
+        onClick={(): void => setBtnLoading(true)}
       ></CButton>
       {/* <ImgTest className="image"></ImgTest> */}
     </div>

@@ -10,12 +10,9 @@ module.exports = {
     "prettier/@typescript-eslint",
     "plugin:prettier/recommended"
   ],
-  // settings: {
-  //   react: {
-  //     version: "detect"
-  //   }
-  // },
   rules: {
+    "react-hooks/rules-of-hooks": 2,
+    "react-hooks/exhaustive-deps": 1,
     "no-console": "off",
     "no-debugger": "off",
     quotes: [1, "double"],

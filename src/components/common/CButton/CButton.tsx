@@ -11,7 +11,13 @@ interface IBtnStatus {
 }
 
 const App = (props: IBtnStatus): JSX.Element => {
-  const { isDisable = false, isLoading = false, btnText, className } = props;
+  const {
+    isDisable = false,
+    isLoading = false,
+    btnText,
+    className,
+    onClick
+  } = props;
   return (
     <div
       className={`
@@ -19,6 +25,7 @@ const App = (props: IBtnStatus): JSX.Element => {
         ${isDisable && "btn--disable"} 
         ${isLoading && "btn--loading"} 
         ${className && className}`}
+      onClick={onClick}
     >
       {isLoading && (
         <div>

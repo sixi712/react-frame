@@ -3,13 +3,24 @@
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
   },
-  "prettier.printWidth": 80,
+  "prettier.printWidth": 100,
   "prettier.semi": true, //去掉代码结尾的分号
   "prettier.bracketSpacing": true, //括号空格
   "prettier.trailingComma": "none",
   "prettier.arrowParens": "avoid",
   "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
-  "eslint.validate": ["javascript", "javascriptreact", ".html", ".js", ".jsx", ".vue", ".json", ".ts", ".tsx", ".scss"],
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    ".html",
+    ".js",
+    ".jsx",
+    ".vue",
+    ".json",
+    ".ts",
+    ".tsx",
+    ".scss"
+  ],
   "[tsx,json,javascript,ts]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   }

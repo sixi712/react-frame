@@ -25,6 +25,7 @@ module.exports = {
     }
   },
   module: {
+    // use的解析是从后往前的
     rules: [
       {
         test: /\.(ts|tsx)$/,

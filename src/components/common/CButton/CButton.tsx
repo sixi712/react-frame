@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import "./style";
 import CLoading from "../CLoading/CLoading";
 
@@ -10,31 +10,26 @@ interface IBtnStatus {
   onClick?: (e?: any) => any;
 }
 
-const App = (props: IBtnStatus): JSX.Element => {
-  const {
-    isDisable = false,
-    isLoading = false,
-    btnText,
-    className,
-    onClick
-  } = props;
-  return (
-    <div
-      className={`
+export default memo(
+  (props: IBtnStatus): JSX.Element => {
+    const { isDisable = false, isLoading = false, btnText, className, onClick } = props;
+    console.log("opopo");
+    return (
+      <div
+        className={`
         btn  
         ${isDisable && "btn--disable"} 
         ${isLoading && "btn--loading"} 
         ${className && className}`}
-      onClick={onClick}
-    >
-      {isLoading && (
-        <div>
-          <CLoading className="loading-icon"></CLoading> <span>Loading...</span>
-        </div>
-      )}
-      {!isLoading && btnText}
-    </div>
-  );
-};
-
-export default App;
+        onClick={onClick}
+      >
+        {isLoading && (
+          <div>
+            <CLoading className="loading-icon"></CLoading> <span>Loading...</span>
+          </div>
+        )}
+        {!isLoading && btnText}
+      </div>
+    );
+  }
+);

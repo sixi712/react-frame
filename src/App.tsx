@@ -1,18 +1,26 @@
-import React from "react";
+import React, { useState, useCallback } from "react";
 import { ImgTest } from "@Assets/Images";
 import { CButton } from "@Components/common";
 import "./style";
 
 const App: React.FC = () => {
-  const [isLoading, setBtnLoading] = React.useState(false);
+  const [isLoading, setBtnLoading] = useState(false);
+  const [count, setCount] = useState(0);
   return (
     <div className="App">
-      <p>{String(isLoading)}</p>
+      <p>{count}</p>
+      <button
+        onClick={() => {
+          setCount(count + 1);
+        }}
+      >
+        +1
+      </button>
       <CButton
         isLoading={isLoading}
         btnText="确认"
         className="confirm-btn"
-        onClick={(): void => setBtnLoading(true)}
+        onClick={useCallback((): void => setBtnLoading(true), [])}
       ></CButton>
       {/* <ImgTest className="image"></ImgTest> */}
     </div>

@@ -1,7 +1,12 @@
 import React, { useState, useCallback } from "react";
-import { ImgTest } from "@Assets/Images";
+import { ImgTest } from "@Assets/images";
 import { CButton } from "@Components/common";
+import Cookies from "js-cookie";
 import "./style";
+
+if (!Cookies.get("lcoal")) {
+  Cookies.set("lcoal", "en_US");
+}
 
 const App: React.FC = () => {
   const [isLoading, setBtnLoading] = useState(false);

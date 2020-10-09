@@ -19,9 +19,9 @@ module.exports = {
       "@Router": path.resolve(__dirname, "../src/router"),
       "@Assets": path.resolve(__dirname, "../src/assets"),
       "@CSS": path.resolve(__dirname, "../src/styles"),
-      "@Common": path.resolve(__dirname, "../src/utils/common"),
-      "@Regular": path.resolve(__dirname, "../src/utils/regExps"),
-      "@Request": path.resolve(__dirname, "../src/utils/request/apis")
+      "@CommonFunc": path.resolve(__dirname, "../src/utils/common.ts"),
+      "@Regular": path.resolve(__dirname, "../src/utils/regExps.ts"),
+      "@Request": path.resolve(__dirname, "../src/utils/request/apis.ts")
     }
   },
   module: {

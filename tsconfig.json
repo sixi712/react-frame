@@ -19,9 +19,9 @@
       "@Router/*": ["src/router/*"],
       "@Assets/*": ["src/assets/*"],
       "@CSS/*": ["src/styles/*"],
-      "@Common/*": ["src/utils/common/*"],
-      "@Regular/*": ["src/utils/regExps/*"],
-      "@Request/*": ["src/utils/request/apis/*"]
+      "@CommonFunc": ["src/utils/common.ts"],
+      "@Regular": ["src/utils/regExps.ts"],
+      "@Request": ["src/utils/request/apis.ts"]
     }
   },
   "include": ["./src/**/*", "src/files.d.ts"]

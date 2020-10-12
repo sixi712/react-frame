@@ -20,6 +20,7 @@ module.exports = {
       "@Assets": path.resolve(__dirname, "../src/assets"),
       "@CSS": path.resolve(__dirname, "../src/styles"),
       "@CommonFunc": path.resolve(__dirname, "../src/utils/common.ts"),
+      "@Types": path.resolve(__dirname, "../src/types/index.ts"),
       "@Regular": path.resolve(__dirname, "../src/utils/regExps.ts"),
       "@Request": path.resolve(__dirname, "../src/utils/request/apis.ts")
     }

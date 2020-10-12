@@ -20,6 +20,8 @@
       "@Assets/*": ["src/assets/*"],
       "@CSS/*": ["src/styles/*"],
       "@CommonFunc": ["src/utils/common.ts"],
+      "@Types": ["src/types/index.ts"],
+      "@Store": ["src/store/*"],
       "@Regular": ["src/utils/regExps.ts"],
       "@Request": ["src/utils/request/apis.ts"]
     }

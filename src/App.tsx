@@ -1,18 +1,14 @@
 import React, { useState, useCallback } from "react";
 import { ImgTest } from "@Assets/images";
-import { CButton } from "@Components/common";
-import Cookies from "js-cookie";
+import { CButton } from "@Components";
+import StoreProvider from "@Components/common/CStoreProvider";
 import "./style";
-
-if (!Cookies.get("lcoal")) {
-  Cookies.set("lcoal", "en_US");
-}
 
 const App: React.FC = () => {
   const [isLoading, setBtnLoading] = useState(false);
   const [count, setCount] = useState(0);
   return (
-    <div className="App">
+    <StoreProvider>
       <p>{count}</p>
       <button
         onClick={() => {
@@ -28,7 +24,7 @@ const App: React.FC = () => {
         onClick={useCallback((): void => setBtnLoading(true), [])}
       ></CButton>
       {/* <ImgTest className="image"></ImgTest> */}
-    </div>
+    </StoreProvider>
   );
 };
 

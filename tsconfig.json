@@ -13,18 +13,18 @@
     "baseUrl": "./",
     "paths": {
       "@": ["src/*"],
-      "@Views/*": ["src/views/*"],
+      "@Pages": ["src/pages"],
       "@Components": ["src/components"],
       "@Components/*": ["src/components/*"],
       "@Constants/*": ["src/constants/*"],
-      "@Router/*": ["src/router/*"],
       "@Assets/*": ["src/assets/*"],
       "@CSS/*": ["src/styles/*"],
       "@CommonFunc": ["src/utils/common.ts"],
       "@Types": ["src/types/index.ts"],
       "@Store": ["src/store"],
       "@Regular": ["src/utils/regExps.ts"],
-      "@Request": ["src/utils/request/apis.ts"]
+      "@Request": ["src/utils/request/apis.ts"],
+      "@Router": ["src/router/routeModule.tsx"]
     }
   },
   "include": ["./src/**/*", "src/files.d.ts"]

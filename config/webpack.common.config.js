@@ -13,17 +13,17 @@ module.exports = {
     extensions: [".js", ".ts", ".tsx", ".scss"],
     alias: {
       "@": path.resolve(__dirname, "../src"),
-      "@Views": path.resolve(__dirname, "../src/views"),
+      "@Pages": path.resolve(__dirname, "../src/pages"),
       "@Components": path.resolve(__dirname, "../src/components"),
       "@Constants": path.resolve(__dirname, "../src/constants"),
-      "@Router": path.resolve(__dirname, "../src/router"),
       "@Assets": path.resolve(__dirname, "../src/assets"),
       "@CSS": path.resolve(__dirname, "../src/styles"),
       "@CommonFunc": path.resolve(__dirname, "../src/utils/common.ts"),
       "@Types": path.resolve(__dirname, "../src/types"),
       "@Store": path.resolve(__dirname, "../src/store"),
       "@Regular": path.resolve(__dirname, "../src/utils/regExps.ts"),
-      "@Request": path.resolve(__dirname, "../src/utils/request/apis.ts")
+      "@Request": path.resolve(__dirname, "../src/utils/request/apis.ts"),
+      "@Router": path.resolve(__dirname, "../src/router/routeModule.tsx")
     }
   },
   module: {

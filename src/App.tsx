@@ -1,5 +1,5 @@
 import React, { useState, useCallback } from "react";
-import { ImgTest } from "@Assets/images";
+import { ImgTest, IconAdd } from "@Assets/images";
 import { CButton } from "@Components";
 import StoreProvider from "@Components/common/CStoreProvider";
 import "./style";
@@ -24,7 +24,7 @@ const App: React.FC = () => {
       >
         <p>确定</p>
       </CButton>
-      {/* <ImgTest className="image"></ImgTest> */}
+      <IconAdd className="imageTest"></IconAdd>
     </StoreProvider>
   );
 };

@@ -19,10 +19,11 @@ const App: React.FC = () => {
       </button>
       <CButton
         isLoading={isLoading}
-        btnText="确认"
         className="confirm-btn"
         onClick={useCallback((): void => setBtnLoading(true), [])}
-      ></CButton>
+      >
+        <p>确定</p>
+      </CButton>
       {/* <ImgTest className="image"></ImgTest> */}
     </StoreProvider>
   );

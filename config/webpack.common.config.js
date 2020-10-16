@@ -6,7 +6,8 @@ module.exports = {
   entry: path.resolve(__dirname, "../src/index.js"),
   output: {
     path: path.resolve(__dirname, "../build"),
-    filename: "js/bundle.js"
+    filename: "js/bundle.js",
+    publicPath: '/'
   },
   resolve: {
     // 依次查找
@@ -15,15 +16,17 @@ module.exports = {
       "@": path.resolve(__dirname, "../src"),
       "@Pages": path.resolve(__dirname, "../src/pages"),
       "@Components": path.resolve(__dirname, "../src/components"),
+      "@Root": path.resolve(__dirname, "../src/components/root"),
       "@Constants": path.resolve(__dirname, "../src/constants"),
       "@Assets": path.resolve(__dirname, "../src/assets"),
       "@CSS": path.resolve(__dirname, "../src/styles"),
       "@CommonFunc": path.resolve(__dirname, "../src/utils/common.ts"),
       "@Types": path.resolve(__dirname, "../src/types"),
-      "@Store": path.resolve(__dirname, "../src/store"),
+      "@StoreConfig": path.resolve(__dirname, "../src/store"),
+      "@Store": path.resolve(__dirname, "../src/components/root/StoreProvider"),
       "@Regular": path.resolve(__dirname, "../src/utils/regExps.ts"),
       "@Request": path.resolve(__dirname, "../src/utils/request/apis.ts"),
-      "@Router": path.resolve(__dirname, "../src/router/routeModule.tsx")
+      "@Router": path.resolve(__dirname, "../src/router")
     }
   },
   module: {

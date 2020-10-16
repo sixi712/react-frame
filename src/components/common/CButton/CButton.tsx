@@ -1,7 +1,7 @@
 import React, { memo, useContext } from "react";
 import "./style";
 import CLoading from "../CLoading/CLoading";
-import { Store } from "@Components/common/CStoreProvider";
+import { Store } from "@Store";
 
 interface IBtnStatus {
   isDisable?: Boolean;

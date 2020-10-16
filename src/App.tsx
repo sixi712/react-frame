@@ -1,19 +1,15 @@
 import React from "react";
-
-import StoreProvider from "@Components/common/CStoreProvider";
-import { BrowserRouter as Router, Link } from "react-router-dom";
-import routeArr from "@Router";
+import Root from "@Root";
+import { Link } from "react-router-dom";
 
 import "./style";
 
 const App: React.FC = () => {
   return (
-    <StoreProvider>
-      <Router>
-        <Link to="/about">about</Link>
-        {routeArr(["HOME", "ABOUT"])}
-      </Router>
-    </StoreProvider>
+    <Root>
+      <Link to="/about">about</Link>
+      <Link to="/">home</Link>
+    </Root>
   );
 };
 

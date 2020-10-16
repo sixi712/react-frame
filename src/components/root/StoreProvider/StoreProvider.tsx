@@ -1,5 +1,5 @@
 import React from "react";
-import { reducer, initialState } from "@Store";
+import { reducer, initialState } from "@StoreConfig";
 import { Context } from "@Types";
 
 type StoreProviderProps = {

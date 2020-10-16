@@ -5,7 +5,8 @@ module.exports = merge(common, {
   devtool: "source-map",
   devServer: {
     host: "0.0.0.0",
-    port: 8088
+    port: 8088,
+    historyApiFallback: true
   },
   module: {
     rules: [

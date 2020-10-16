@@ -7,12 +7,6 @@ https://www.bilibili.com/video/BV1a741197Hn
 
 ---
 
-## 配置 alias
-
-在正常的 webpack 配置基础上还要在 tsconfig.json 里面配置 baseUrl 和 paths
-
----
-
 # package.json 里面部分插件说明
 
 mini-css-extract-plugin：将把我们编译的所有 SCSS 编译成 CSS 并将它们放在一个新文件中，而不是内联它们。需要区别 extract-text-webpack-plugin  
@@ -30,3 +24,16 @@ terser-webpack-plugin：webpack 自带的， 可以取代 uglifyjs-webpack-plugi
 ## postcss 插件
 
 autoprefixer：根据当前不同浏览器支持的特性来为你添加前缀（使用最新的版本有个 bug， 目前采用降级的方法：https://github.com/parcel-bundler/parcel/issues/5160）
+
+---
+
+# 遇到的问题
+
+## 配置 alias
+
+在正常的 webpack 配置基础上还要在 tsconfig.json 里面配置 baseUrl 和 paths
+
+## 路由配好后刷新后得到 Cannot GET {url}
+
+在 webpack 中： output.publicPath = '/' and devServer.historyApiFallback = true  
+https://stackoverflow.com/questions/43209666/react-router-v4-cannot-get-url

@@ -12,8 +12,8 @@ interface IBtnStatus {
 }
 export default memo(
   (props: IBtnStatus): JSX.Element => {
-    const { state } = React.useContext(Store);
-    console.log(state.theme);
+    const { state } = useContext(Store);
+    console.log(state.theme, "btn 渲染");
     const { isDisable = false, isLoading = false, className, onClick } = props;
     return (
       <div
@@ -32,5 +32,5 @@ export default memo(
         {!isLoading && props.children}
       </div>
     );
-  }
+  },()
 );

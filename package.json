@@ -4,7 +4,7 @@
   "description": "react frame",
   "main": "index.js",
   "scripts": {
-    "dev": "cross-env NODE_ENV=development webpack-dev-server",
+    "dev": "yarn && cross-env NODE_ENV=development webpack-dev-server",
     "build": "cross-env NODE_ENV=production webpack"
   },
   "repository": {
@@ -20,6 +20,7 @@
   "dependencies": {
     "@types/js-cookie": "^2.2.6",
     "@types/react-router-dom": "^5.1.6",
+    "axios": "^0.20.0",
     "js-cookie": "^2.2.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",

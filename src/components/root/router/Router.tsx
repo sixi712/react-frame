@@ -5,7 +5,7 @@ interface IRouteList {
   [propName: string]: {
     comp: React.ReactNode;
     path: string;
-    exact?: true;
+    exact?: boolean;
   };
 }
 
@@ -26,8 +26,9 @@ const routeType: IRouteList = {
   }
 };
 
-// 这个地方，依赖routeList的顺序，不采用Object.keys(routeType)
-const routeList = ["HOME", "ABOUT", "404"];
+// 404保持在最后
+const routeList: Array<string> = Object.keys(routeType).filter(item => item !== "404")
+routeList.push("404");
 
 export default (props: { children: React.ReactNode }) => {
   return (

@@ -12,7 +12,7 @@
     "esModuleInterop": true,
     "baseUrl": "./",
     "paths": {
-      "@": ["src/*"],
+      "@/*": ["src/*"],
       "@Root": ["src/components/root"],
       "@Pages": ["src/pages"],
       "@Components": ["src/components"],
@@ -22,7 +22,6 @@
       "@CSS/*": ["src/styles/*"],
       "@CommonFunc": ["src/utils/common.ts"],
       "@Types": ["src/types/index.ts"],
-      "@StoreConfig": ["src/store"],
       "@Store": ["src/components/root/StoreProvider"],
       "@Regular": ["src/utils/regExps.ts"],
       "@Request": ["src/utils/request/apis.ts"],

@@ -1,12 +1,13 @@
 import axios from "axios";
-
+import { baseConfig } from "@Constants";
 // 创建axios实例
 const service = axios.create({
-  baseURL: process.env.BASE_API
+  baseURL: baseConfig.baseUrl
 });
 // request拦截器
 service.interceptors.request.use(
   config => config,
+
   error => {
     // Do something with request error
     console.log(error); // for debug

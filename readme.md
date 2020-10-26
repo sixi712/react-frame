@@ -27,7 +27,7 @@ autoprefixer：根据当前不同浏览器支持的特性来为你添加前缀�
 
 ---
 
-# 遇到的问题
+# 遇到的部分问题
 
 ## 配置 alias
 
@@ -37,3 +37,7 @@ autoprefixer：根据当前不同浏览器支持的特性来为你添加前缀�
 
 在 webpack 中： output.publicPath = '/' and devServer.historyApiFallback = true  
 https://stackoverflow.com/questions/43209666/react-router-v4-cannot-get-url
+
+## 配置全局.d.ts
+
+参考https://github.com/NervJS/taro/blob/3204583542aaa74f1b35de910722d3f0324ad6e0/packages/taro-cli/templates/default/global.d.ts

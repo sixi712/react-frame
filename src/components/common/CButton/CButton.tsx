@@ -4,10 +4,11 @@ import CLoading from "../CLoading/CLoading";
 import { Store } from "@Store";
 
 interface IBtnStatus {
+  name?: string;
   isDisable?: Boolean;
   isLoading?: Boolean;
-  className?: String;
-  children: React.ReactNode;
+  className?: string;
+  children?: React.ReactNode;
   onClick?: (e?: any) => any;
 }
 export default memo(
@@ -30,7 +31,8 @@ export default memo(
           </div>
         )}
         {!isLoading && props.children}
+        {!isLoading && !props.children && props.name}
       </div>
     );
-  },()
+  }
 );

@@ -1,5 +1,5 @@
 import axios from "axios";
-import { baseConfig } from "@Constants";
+import baseConfig from "@BaseConfig";
 // 创建axios实例
 const service = axios.create({
   baseURL: baseConfig.baseUrl
